@@ -62,7 +62,9 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 
 ## Get started
 
-Copy `.env.example` to `.env` and update accordingly, then:
+Clone the repository  
+Install the vendor files `docker run --rm -v $(pwd):/app composer install`  
+Copy `.env.example` to `.env` and update accordingly, then:  
 ```
 docker-compose exec app php artisan key:generate
 docker-compose exec app php artisan config:cache
